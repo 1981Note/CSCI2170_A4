@@ -1,0 +1,262 @@
+/*
+ * This is main.css file created by Siyuan Chen (B00831463)
+ * Email: sy611254@dal.ca
+ * This file is for the style of web pages in Assignment 4 in CSCI2170 
+ */
+
+ /* set the style of body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 80vw;
+	min-width: 800px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* set the header style */
+header {
+	background-color: #0984e3;
+	color: white;
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	padding: 1em;
+}
+
+/* set the h1 style */
+header > h1 {
+	margin: 0;
+	padding: 0;
+}
+
+/* set the link in h1 style */
+h1 > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* set the hover color of the h1 */
+h1 > a:hover {
+    color: yellow;
+}
+
+/* set main style */
+main {
+	min-height: 50vh;
+    width: 77vw;
+    margin: 3em auto;
+}
+
+/* style of login form */
+form#form{
+	display: flex;
+	flex-direction: column;
+    width: 46vw;
+    margin: 0 auto;
+}
+
+/* set h3 (Login to JediMail, Inbox, Sent & drafts, write new email head) style*/
+h3{
+    margin-top: 8%;
+    text-align: center;
+    color: #0984e3;
+    border-bottom: 0.5px solid #636e72;
+    padding-bottom: 1.5%;
+}
+
+/* 
+    Website to find how to center two button side by side
+    URL: https://coder-coder.com/how-to-center-button-with-html-css/
+    Accessed Date: 2021/11/14
+*/
+
+/* set div buttons style */
+#center-login-1{
+    display: flex;
+    justify-content: center;
+}
+
+/* set two buttons (submit, clear) style */
+#input-submit-form, #input-clear-form{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+}
+
+/* style the submit button */
+#input-submit-form{
+    background-color: #0984e3;
+    margin-right: 1px;
+}
+
+/* style the clear button */
+#input-clear-form{
+    background-color: #c0392b;
+}
+
+/* style the input of email, password, fullname, new-email, new email subject, new email content subject in login form and sent email form */
+#input-email, #input-password, #input-fullname, #input-new-email, #input-new-email-subject, #input-new-email-content-subject{
+    float: right;
+    width: 70%;
+}
+
+/*div for email, password, fullname, new email, new email subject, new email subject content, and center-compose part*/
+#email-part, #password-part, #fullname-part, #new-email-part, #new-email-subject-part, #new-email-subject-content, #center-compose{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* set the incorrect input style*/
+#incorrectInput{
+    margin-top: 2%;
+	color: #c0392b;
+    font-size: small;
+    font-weight: bold;
+}
+
+/* style the nav bar */
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #636e72;
+    text-decoration: none;
+}
+
+/* style the links in nav bar*/
+nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* style the hover in nav bar*/
+nav a:hover{
+    color: yellow;
+}
+
+/* style the table for show the table in inbox and sent and drafts*/
+table{
+    margin-top: 2%;
+    width: 100%;
+    text-align: left;
+}
+
+/*style the row in table in inbox.php, and sent.php*/
+/*
+.inbox{
+    padding-bottom: 2%;
+}
+*/
+
+/*style the fullname column*/
+.fullname{
+    width: 20%;
+    padding-top: 2%;
+    color: #636e72;
+}
+
+/*style the subject column*/
+.subject{
+    width: 60%;
+    padding-top: 2%;
+    color: #636e72;
+}
+
+/*style the date column*/
+.date{
+    width: 30%;
+    padding-top: 2%;
+    color: #636e72;
+}
+
+/*style the content*/
+.content{
+    margin-top: 3%;
+    color: #636e72;
+}
+
+/*style the class content*/
+.email-content{
+    margin-top: 5%;
+    color: #636e72;
+}
+
+/*italic the title in subject*/
+.italic{
+    font-style: italic;
+}
+
+/*style email all content*/
+.email-all-content{
+    color: #636e72;
+}
+
+/*style the label*/
+label{
+    color: #636e72;
+}
+
+/*style the form in compose.php*/
+form#form2 {
+	display: flex;
+	flex-direction: column;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+/*center the compose form*/
+#center-compose{
+    display: flex;
+    justify-content: center;
+}
+
+/*style the buttons for sent, save and clear*/
+#input-send-form, #input-save-form, #input-clear2-form{
+    width: 33%;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+}
+
+/*style the send button*/
+#input-send-form{
+    background-color: #0984e3;
+    margin-right: 1px;
+}
+
+/*style the save button*/
+#input-save-form{
+    background-color: #6c5ce7;
+    margin-right: 1px;
+}
+
+/*style the clear button in compose.php*/
+#input-clear2-form{
+    background-color: #c0392b;
+}
+
+/*footer style*/
+footer {
+	background-color: black;
+	color: white;
+	height: 100px;
+}
+
+footer p {
+	padding-left: 1em;
+	line-height: 100px;
+	vertical-align: middle;
+}
+
+/*
+ *  I have used colours from the following website:
+ *	https://flatuicolors.com/
+ *  Date Accessed: 15 November 2021
+ */
